@@ -4,7 +4,7 @@
 
 git config
 
-➀  Configures user information used across all local repositories.
+1.  Configures user information used across all local repositories.
 
 ❯ git config --global user. name “username”
 
@@ -14,13 +14,13 @@ git config
 
 ❯ git config --global alias.alc “!git add -A && git commit -m”
 
-➋  git init
+2.  git init
 
 ➀  Initializes an existing directory in the local file system as a Git repository.
 
 ❯ git init
 
-➌  git clone
+3.  git clone
 
 Retrieves an entire repository from a hosted location via a valid Git URL.
 
@@ -30,7 +30,7 @@ Retrieves an entire repository from a hosted location via a valid Git URL.
 ➁
 ❯ git clone --branch <name> [url]
   
-  ➍  git add
+  4.  git add
 
 ➀ Add a file to the staging area
 
@@ -48,19 +48,19 @@ Retrieves an entire repository from a hosted location via a valid Git URL.
 
 ❯ git add .
   
-  ➎  git rm
+  5.  git rm
 
 ➀  Deletes the file from the project and stages the removal for commit.
 
 ❯ git rm [file]
   
-  ➏  git mv
+  6.  git mv
 
 ➀  Changes an existing file path and stages the move.
 
 ❯ git mv [existing-path] [new-path]
   
-  ➐  git commit
+  7.  git commit
 
 ➀  Commits the staged contents as a new commit snapshot.
 
@@ -74,7 +74,7 @@ Retrieves an entire repository from a hosted location via a valid Git URL.
 
 ❯ git commit --amend -m "message"
   
-  ➑  git branch
+  8.  git branch
 
 List, Create or, Delete Branches
 
@@ -87,13 +87,13 @@ List, Create or, Delete Branches
 ➂  Delete a Branch
 ❯ git branch -d [branch-name]
   
-  ➒  git status
+  9.  git status
 
 ➀  Shows the paths of modified files in the working directory.
 
 ❯ git status
   
-  ➓  git diff
+  10.  git diff
 
 Show changes between commits.
 
@@ -106,7 +106,7 @@ Show changes between commits.
 ➂  To see the diff between the 2 branches
 ❯ git diff BranchA...BranchB
   
-  ➊➊  git log
+  11.  git log
 
 ➀  Shows the commit history for the currently active branch.
 
@@ -116,7 +116,7 @@ Show changes between commits.
 
 ❯ git log branchB..branchA
   
-  ➊➋  git checkout
+  12.  git checkout
 
 It is used to switch to another branch.
 
@@ -128,13 +128,13 @@ It is used to switch to another branch.
 
 ❯ git checkout -b [branch-name]
   
-  ➊➌  git merge
+  13.  git merge
 
 ➀  Join 2 or more development histories together.
 
 ❯ git merge [branch]
   
-  ➊➍  git fetch
+  14.  git fetch
 
 ➀  Fetch branches and/or tags from one or more other repositories.
 
@@ -142,31 +142,31 @@ It is used to switch to another branch.
 
 ✧ Note: You can use git fetch to know the changes made in the remote repo/branch since your last pull.
   
-  ➊➎  git pull
+  15.  git pull
 
 ➀  Fetch and merge any commits from the tracking remote branch.
 
 ❯ git pull
   
-  ➊➏  git push
+  16.  git push
 
 ➀  Transmit local branch commits to the remote repository branch.
 
 ❯ git push [alias]
   
-  ➊➐  git rebase
+  17.  git rebase
 
 ➀  Applies any commits of the current branch ahead of the specified one.
 
 ❯ git rebase [branch-name]
   
-  ➊➑  git revert
+  18.  git revert
 
 ➀  Reverts some existing commits.
 
 ❯ git revert <commit>
   
-  ➊➒  git reset
+  19.  git reset
 
 Resets current HEAD to the specified state.
 
@@ -194,21 +194,7 @@ Temporarily stores modified, tracked files to change branches
 ➃ Discard the changes from top
 ❯ git stash drop
   
-  ➋➊  git reflog
-
-➀  See reference logs (reflog) of HEAD for recent commits, pulls, reverts etc.
-
-❯ git reflog
-
-➁  Get a complete reflog of all refs
-
-❯ git reflog show --all
-
-➂  To see the reflog for a specific branch
-
-❯ git reflog show branchA
-  
-  ➋➊  git reflog
+  21.  git reflog
 
 ➀  See reference logs (reflog) of HEAD for recent commits, pulls, reverts etc.
 
