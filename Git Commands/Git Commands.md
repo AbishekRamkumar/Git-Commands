@@ -1,6 +1,6 @@
 # 40+ useful Git commands for everyone
 
-⇩
+# ⇩
 
 # 1. git config
 
